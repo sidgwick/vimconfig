@@ -176,14 +176,23 @@ let g:pdv_cfg_ReturnVal = "void"
 
 " Always show the statusline
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_powerline_fonts = 1
+" 配套字体-Monaco
+" https://github.com/nicholasc/vim-monaco-webdevicons
 
-" Recommended settings for syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+" syntastic
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_enable_highlighting = 1
+
+" 各个语法检查工具的配置
+let g:syntastic_php_phpcs_args = "--standard=PSR2 --encoding=utf-8"
+
+" 快速关闭syntastic
+nmap lc :lclose<cr>
+
