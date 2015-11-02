@@ -31,8 +31,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'molokai'
 Plugin 'phpcs.vim'
-Plugin 'The-NERD-Commenter'
-"Plugin 'The-NERD-tree'
+" Plugin 'The-NERD-Commenter'
+" Plugin 'The-NERD-tree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Indent-Guides'
 Plugin 'SuperTab'
@@ -50,7 +51,9 @@ Plugin 'sidgwick/ManPageView'
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'Lokaltog/vim-powerline'
+" Plugin 'Lokaltog/vim-powerline'
+" Nice statusline/ruler for vim
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -171,10 +174,16 @@ let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = ""
 let g:pdv_cfg_ReturnVal = "void"
 
-" Disable vi-compatibility
-set nocompatible
 " Always show the statusline
 set laststatus=2
-" Necessary to show Unicode glyphs
-set encoding=utf-8
 let g:Powerline_symbols = 'fancy'
+
+" Recommended settings for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
