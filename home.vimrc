@@ -32,7 +32,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'molokai'
 Plugin 'phpcs.vim'
 Plugin 'The-NERD-Commenter'
-Plugin 'The-NERD-tree'
+"Plugin 'The-NERD-tree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'Indent-Guides'
 Plugin 'SuperTab'
 " Plugin 'Valloric/YouCompleteMe'
@@ -45,6 +46,11 @@ Plugin 'assistant'
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'sidgwick/ManPageView'
+
+Plugin 'scrooloose/syntastic'
+" Some plugs for fun
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'Lokaltog/vim-powerline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -165,3 +171,10 @@ let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = ""
 let g:pdv_cfg_ReturnVal = "void"
 
+" Disable vi-compatibility
+set nocompatible
+" Always show the statusline
+set laststatus=2
+" Necessary to show Unicode glyphs
+set encoding=utf-8
+let g:Powerline_symbols = 'fancy'
