@@ -96,7 +96,7 @@ set cino=:0(0
 " 设定缩进宽度
 set tabstop=4
 set softtabstop=4
-set cindent shiftwidth=4
+set shiftwidth=4
 " 空格代替TAB缩进
 set expandtab
 
@@ -191,8 +191,10 @@ let g:syntastic_loc_list_height = 5
 let g:syntastic_enable_highlighting = 1
 
 " 各个语法检查工具的配置
-let g:syntastic_php_phpcs_args = "--standard=PSR2 --encoding=utf-8"
+let g:syntastic_php_phpcs_args = "--standard=Yii2 --encoding=utf-8"
+" 手动检查快捷键
+nmap sc :SyntasticCheck<CR>
 
 " 快速关闭syntastic
-nmap lc :lclose<cr>
+nmap lc :lclose<CR>
 
