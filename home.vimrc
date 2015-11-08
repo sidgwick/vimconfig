@@ -47,6 +47,7 @@ Plugin 'assistant'
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'sidgwick/ManPageView'
+Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
