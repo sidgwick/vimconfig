@@ -199,3 +199,5 @@ nmap sc :SyntasticCheck<CR>
 " 快速关闭syntastic
 nmap lc :lclose<CR>
 
+" PSR2标准要求case缩进在switch之后, 而不与之对齐
+let g:PHP_vintage_case_default_indent = 1
