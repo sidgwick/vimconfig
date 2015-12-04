@@ -49,6 +49,7 @@ Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'sidgwick/ManPageView'
 Plugin 'terryma/vim-multiple-cursors'
 
+Plugin 'szw/vim-ctrlspace'
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
 Plugin 'ryanoasis/vim-devicons'
@@ -123,6 +124,9 @@ hi CursorColumn ctermbg=016 ctermfg=white guibg=darkred guifg=white
 
 " 颜色设置
 colorscheme molokai
+
+" CtrlSpace
+set hidden
 
 " 代码折叠方式
 " set foldmethod=indent
