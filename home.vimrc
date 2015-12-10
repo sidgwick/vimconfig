@@ -201,7 +201,7 @@ let g:syntastic_php_phpcs_args = "--standard=Yii2 --encoding=utf-8"
 nmap sc :SyntasticCheck<CR>
 
 " 快速关闭syntastic
-nmap lc :lclose<CR>
+nmap slc :lclose<CR>
 
 " PSR2标准要求case缩进在switch之后, 而不与之对齐
 let g:PHP_vintage_case_default_indent = 1
