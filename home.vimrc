@@ -35,10 +35,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Indent-Guides'
 " Plugin 'mopp/tailCleaner.vim'
-Plugin 'SuperTab'
 Plugin 'janitor.vim'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'OmniCppComplete'
+" Plugin 'SuperTab'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'OmniCppComplete'
 Plugin 'taglist.vim'
 " Plugin 'std_c.zip'
 Plugin 'assistant'
@@ -205,3 +206,35 @@ nmap slc :lclose<CR>
 
 " PSR2标准要求case缩进在switch之后, 而不与之对齐
 let g:PHP_vintage_case_default_indent = 1
+
+" YCM
+" 离开插入模式后自动关闭预览窗口
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+" 回车即选中当前项
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+" 开启基于tag的补全，可以在这之后添加需要的标签路径
+let g:ycm_collect_identifiers_from_tags_files= 1
+" 注释和字符串中的文字也会被收入补全
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+" 输入第 2 个字符开始补全
+let g:ycm_min_num_of_chars_for_completion= 2
+" 禁止缓存匹配项,每次都重新生成匹配项
+let g:ycm_cache_omnifunc=0
+" 开启语义补全
+let g:ycm_seed_identifiers_with_syntax= 1
+" 在注释输入中也能补全
+let g:ycm_complete_in_comments = 1
+" 在字符串输入中也能补全
+let g:ycm_complete_in_strings = 1
+" 在注释里收集补全字符串
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+" make YCM compatible with UltiSnips (using supertab)
+"let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+"let g:UltiSnipsExpandTrigger = "<tab>"
+"let g:UltiSnipsJumpForwardTrigger = "<tab>"
+"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
