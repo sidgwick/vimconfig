@@ -52,6 +52,8 @@ Plugin 'terryma/vim-multiple-cursors'
 
 " Handlebars.js
 Plugin 'mustache/vim-mustache-handlebars'
+" Plugin 'Bestra/vim-html-handlebars-indent'
+Plugin 'joukevandermaas/vim-ember-hbs'
 
 Plugin 'szw/vim-ctrlspace'
 Plugin 'scrooloose/syntastic'
