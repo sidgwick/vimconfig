@@ -50,6 +50,9 @@ Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'sidgwick/ManPageView'
 Plugin 'terryma/vim-multiple-cursors'
 
+" Handlebars.js
+Plugin 'mustache/vim-mustache-handlebars'
+
 Plugin 'szw/vim-ctrlspace'
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
@@ -125,6 +128,9 @@ hi CursorColumn ctermbg=016 ctermfg=white guibg=darkred guifg=white
 
 " 颜色设置
 colorscheme molokai
+
+" 目录自动切换
+set autochdir
 
 " CtrlSpace
 set hidden
@@ -238,3 +244,5 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 "let g:UltiSnipsExpandTrigger = "<tab>"
 "let g:UltiSnipsJumpForwardTrigger = "<tab>"
 "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+let g:mustache_abbreviations = 1
