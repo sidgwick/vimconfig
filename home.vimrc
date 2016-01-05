@@ -38,6 +38,11 @@ Plugin 'Indent-Guides'
 Plugin 'janitor.vim'
 " Plugin 'SuperTab'
 Plugin 'Valloric/YouCompleteMe'
+" Plugin 'jshint/jshint'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/yajs.vim'
 " Plugin 'SirVer/ultisnips'
 " Plugin 'OmniCppComplete'
 Plugin 'taglist.vim'
@@ -50,7 +55,7 @@ Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'sidgwick/ManPageView'
 Plugin 'terryma/vim-multiple-cursors'
 
-Plugin 'szw/vim-ctrlspace'
+" Plugin 'szw/vim-ctrlspace'
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
 Plugin 'ryanoasis/vim-devicons'
@@ -139,7 +144,7 @@ cs add ./cscope.out
 
 " 特殊文件类型的特殊处理
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType html,htm,tex,js,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10
+autocmd FileType html,htm,tex,js,jsx,javascript,javascript.jsx,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10
 
 
 " au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
@@ -171,6 +176,11 @@ nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+
+" JSX
+let g:jsx_ext_required = 0
+
+
 " phpDocumentor variables
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
