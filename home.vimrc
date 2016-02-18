@@ -61,7 +61,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ryanoasis/vim-devicons'
 " Plugin 'Lokaltog/vim-powerline'
 " Nice statusline/ruler for vim
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -200,6 +201,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
+let g:airline_theme='badwolf'
 " 配套字体-Monaco
 " https://github.com/nicholasc/vim-monaco-webdevicons
 
