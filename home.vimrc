@@ -43,6 +43,9 @@ Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/yajs.vim'
+"Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-ctrlspace/vim-ctrlspace'
+Plugin 'mileszs/ack.vim'
 " Plugin 'SirVer/ultisnips'
 " Plugin 'OmniCppComplete'
 Plugin 'taglist.vim'
@@ -255,3 +258,10 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 let g:mustache_abbreviations = 1
+
+let g:CtrlSpaceDefaultMappingKey = "<C-p>p"
+nmap <C-A> :Ack <CR>
+if executable("ag")
+    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+    let g:ackprg = 'ag --vimgrep'
+endif
