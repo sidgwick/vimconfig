@@ -43,6 +43,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/yajs.vim'
+Plugin 'burnettk/vim-angular'
 "Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 Plugin 'mileszs/ack.vim'
@@ -66,6 +67,9 @@ Plugin 'ryanoasis/vim-devicons'
 " Nice statusline/ruler for vim
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+" Plugins for YII2
+Plugin 'mikehaertl/yii2-apidoc-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -259,8 +263,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
 let g:mustache_abbreviations = 1
 
-let g:CtrlSpaceDefaultMappingKey = "<C-p>p"
-nmap <C-A> :Ack <CR>
+let g:CtrlSpaceDefaultMappingKey = "<C-_>x"
+nmap <C-_>a :Ack <CR>
 if executable("ag")
     let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
     let g:ackprg = 'ag --vimgrep'
