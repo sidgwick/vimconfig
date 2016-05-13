@@ -247,6 +247,8 @@ let g:ycm_complete_in_strings = 1
 " 在注释里收集补全字符串
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " make YCM compatible with UltiSnips (using supertab)
 "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 "let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
