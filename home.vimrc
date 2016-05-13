@@ -259,8 +259,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
 let g:mustache_abbreviations = 1
 
-let g:CtrlSpaceDefaultMappingKey = "<C-p>p"
-nmap <C-A> :Ack <CR>
+let g:CtrlSpaceDefaultMappingKey = "<C-_> "
+nmap <C-A>c :Ack <CR>
 if executable("ag")
     let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
     let g:ackprg = 'ag --vimgrep'
