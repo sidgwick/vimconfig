@@ -213,10 +213,18 @@ let g:airline_theme='badwolf'
 " https://github.com/nicholasc/vim-monaco-webdevicons
 
 " syntastic
-let g:syntastic_check_on_open = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_enable_highlighting = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"let g:syntastic_loc_list_height = 5
+"let g:syntastic_enable_highlighting = 1
 
 " 各个语法检查工具的配置
 let g:syntastic_php_phpcs_args = "--standard=Yii2 --encoding=utf-8"
@@ -250,6 +258,9 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 " 在注释里收集补全字符串
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+" let g:ycm_show_diagnostics_ui = 0
+let g:ycm_confirm_extra_conf = 0
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
