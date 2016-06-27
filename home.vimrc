@@ -91,6 +91,9 @@ filetype plugin indent on    " required
 """"""""""""""""""""""" End of VundleVim configure """"""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" debug
+" set vbs=4
+
 " 行号
 set nu
 " 语法支持
@@ -141,6 +144,9 @@ colorscheme molokai
 
 " 目录自动切换
 set autochdir
+
+" 代码折叠
+set fdm=marker
 
 " CtrlSpace
 set hidden
