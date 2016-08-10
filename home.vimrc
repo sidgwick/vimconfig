@@ -71,6 +71,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " Plugins for YII2
 Plugin 'mikehaertl/yii2-apidoc-vim'
 
+" Plugins for debug
+Plugin 'joonty/vdebug'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
