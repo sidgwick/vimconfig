@@ -68,6 +68,11 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Plugins for css3, html5
+" Plugin 'hail2u/vim-css3-syntax'
+Plugin 'JulesWang/css.vim'
+Plugin 'othree/html5.vim'
+
 " Plugins for YII2
 Plugin 'mikehaertl/yii2-apidoc-vim'
 
