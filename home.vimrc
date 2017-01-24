@@ -40,7 +40,8 @@ Plugin 'janitor.vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 " Plugin 'SuperTab'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'jshint/jshint'
+" Plugin 'hallettj/jslint.vim'
+" Plugin 'jshint/jshint'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
@@ -237,6 +238,7 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_enable_highlighting = 1
 
 " 各个语法检查工具的配置
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_php_phpcs_args = "--standard=Yii2 --encoding=utf-8"
 " 手动检查快捷键
 nmap sc :SyntasticCheck<CR>
