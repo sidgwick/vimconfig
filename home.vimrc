@@ -36,16 +36,16 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Indent-Guides'
 " Plugin 'mopp/tailCleaner.vim'
 Plugin 'janitor.vim'
+" Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-ctrlspace/vim-ctrlspace'
 " Plugin 'SuperTab'
 Plugin 'Valloric/YouCompleteMe'
-" Plugin 'jshint/jshint'
+Plugin 'jshint/jshint'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'burnettk/vim-angular'
-"Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-ctrlspace/vim-ctrlspace'
 Plugin 'mileszs/ack.vim'
 " Plugin 'SirVer/ultisnips'
 " Plugin 'OmniCppComplete'
@@ -59,7 +59,6 @@ Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'sidgwick/ManPageView'
 Plugin 'terryma/vim-multiple-cursors'
 
-" Plugin 'szw/vim-ctrlspace'
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
 Plugin 'ryanoasis/vim-devicons'
@@ -286,6 +285,9 @@ nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 let g:mustache_abbreviations = 1
+
+" let g:ctrlp_map = '<C-_>p'
+" let g:ctrlp_cmd = 'CtrlP'
 
 let g:CtrlSpaceDefaultMappingKey = "<C-_>x"
 nmap <C-_>a :Ack <CR>
