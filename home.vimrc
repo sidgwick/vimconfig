@@ -170,6 +170,8 @@ cs add ./cscope.out
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType html,htm,tex,js,jsx,javascript,javascript.jsx,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10
 
+" python yapf格式化
+autocmd FileType python nnoremap <leader>= :%!yapf<CR>
 
 " au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " set completeopt=menuone,menu,longest
