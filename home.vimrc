@@ -68,6 +68,8 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Plugin 'jmcantrell/vim-virtualenv'
+
 " Plugins for css3, html5
 " Plugin 'hail2u/vim-css3-syntax'
 Plugin 'JulesWang/css.vim'
@@ -238,6 +240,8 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_enable_highlighting = 1
 
 " 各个语法检查工具的配置
+" let g:syntastic_python_checkers = ['pylint']
+" let g:syntastic_python_python_exec = "python"
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_php_phpcs_args = "--standard=Yii2 --encoding=utf-8"
 " 手动检查快捷键
@@ -275,6 +279,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_confirm_extra_conf = 0
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let g:ycm_python_binary_path = 'python'
 
 " make YCM compatible with UltiSnips (using supertab)
 "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
