@@ -297,8 +297,6 @@ let g:ycm_python_binary_path = 'python'
 "let g:UltiSnipsJumpForwardTrigger = "<tab>"
 "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-let g:mustache_abbreviations = 1
-
 " let g:ctrlp_map = '<C-_>p'
 " let g:ctrlp_cmd = 'CtrlP'
 
