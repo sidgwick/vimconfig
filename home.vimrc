@@ -76,6 +76,9 @@ Plugin 'othree/html5.vim'
 " Plugins for YII2
 Plugin 'mikehaertl/yii2-apidoc-vim'
 
+" Rust
+Plugin 'rust-lang/rust.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
