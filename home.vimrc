@@ -50,6 +50,7 @@ Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'scrooloose/syntastic'
 " Some plugs for fun
+Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'ryanoasis/vim-devicons'
 " Plugin 'Lokaltog/vim-powerline'
 " Nice statusline/ruler for vim
@@ -190,6 +191,13 @@ let g:indent_guides_guide_size = 1
 " 缩进对齐线的颜色设置
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red ctermbg=234
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=236
+
+" rainbow parentheses, always on
+autocmd FileType lisp :RainbowParenthesesToggle
+autocmd FileType lisp :RainbowParenthesesLoadRound
+autocmd FileType lisp :RainbowParenthesesLoadSquare
+autocmd FileType lisp :RainbowParenthesesLoadBraces
+
 
 " 设置NerdTree
 map <F3> :NERDTreeMirror<CR>
