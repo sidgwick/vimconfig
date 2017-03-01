@@ -57,6 +57,12 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" lisp
+Plugin 'kovisoft/slimv'
+" Plugin 'vim-scripts/slimv.vim'
+" Plugin 'jpalardy/vim-slime'
+
+" PHP
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
 Plugin 'phpcs.vim'
@@ -298,6 +304,19 @@ let g:ycm_confirm_extra_conf = 0
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let g:ycm_python_binary_path = 'python'
+
+" lisp
+let g:slimv_lisp = 'clisp'
+" let g:slimv_impl = 'clisp'
+let g:slimv_python_version = 'python2'
+" let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/bundle/slimv/slime/start-swank.lisp &'
+" open swank server manualy to avoid the ugly xterm window
+let g:slimv_swank_cmd = ''
+" let g:lisp_rainbow = 1
+let g:paredit_mode = 0
+let g:slimv_repl_split = 3
+let g:slimv_repl_split_size = 50
+" autocmd BufEnter REPL :res -10
 
 " make YCM compatible with UltiSnips (using supertab)
 "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
