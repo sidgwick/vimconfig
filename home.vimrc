@@ -81,6 +81,10 @@ Plugin 'burnettk/vim-angular'
 " Plugin 'std_c.zip'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+" Python
+" Plugin 'python-mode/python-mode'
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 " Plugins for css3, html5
 " Plugin 'hail2u/vim-css3-syntax'
 Plugin 'JulesWang/css.vim'
@@ -314,8 +318,8 @@ let g:slimv_python_version = 'python2'
 let g:slimv_swank_cmd = ''
 " let g:lisp_rainbow = 1
 let g:paredit_mode = 0
-let g:slimv_repl_split = 3
-let g:slimv_repl_split_size = 50
+let g:slimv_repl_split = 2
+let g:slimv_repl_split_size = 4
 " autocmd BufEnter REPL :res -10
 
 " make YCM compatible with UltiSnips (using supertab)
