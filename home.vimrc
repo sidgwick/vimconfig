@@ -83,7 +83,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Python
 " Plugin 'python-mode/python-mode'
-Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'Vimjas/vim-python-pep8-indent' " included in python mode
 
 " Plugins for css3, html5
 " Plugin 'hail2u/vim-css3-syntax'
@@ -240,6 +240,13 @@ let g:pdv_cfg_Author = "Zhigang Song <1005411480a@gmail.com>"
 let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = ""
 let g:pdv_cfg_ReturnVal = "void"
+
+" Python mode
+let g:pymode_python = 'python3'
+let g:pymode_folding = 0
+let g:pymode_options_colorcolumn = 0
+let g:pymode_doc_bind = 'K'
+let g:pymode_virtualenv_path = '.venv'
 
 " Always show the statusline
 set laststatus=2
