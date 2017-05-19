@@ -187,6 +187,7 @@ cs add ./cscope.out
 " 特殊文件类型的特殊处理
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType html,htm,tex,js,jsx,javascript,javascript.jsx,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10
+autocmd FileType md set shiftwidth=2 | set expandtab | set nowrap
 
 " python yapf格式化
 autocmd FileType python nnoremap <leader>= :%!yapf<CR>
@@ -288,10 +289,13 @@ nmap slc :lclose<CR>
 let g:PHP_vintage_case_default_indent = 1
 
 " YCM
+let g:ycm_key_invoke_completion = '<C-t>'
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " 回车即选中当前项
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+
 " 开启基于tag的补全，可以在这之后添加需要的标签路径
 let g:ycm_collect_identifiers_from_tags_files= 1
 " 注释和字符串中的文字也会被收入补全
@@ -308,11 +312,8 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 " 在注释里收集补全字符串
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
-
 " let g:ycm_show_diagnostics_ui = 0
 let g:ycm_confirm_extra_conf = 0
-
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let g:ycm_python_binary_path = 'python'
 
