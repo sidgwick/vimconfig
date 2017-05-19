@@ -296,6 +296,8 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " 回车即选中当前项
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
+" Ycm ignore this file types
+let g:ycm_filetype_blacklist={'notes': 1, 'markdown': 1, 'unite': 1, 'tagbar': 1, 'pandoc': 1, 'qf': 1, 'vimwiki': 1, 'text': 1, 'infolog': 1, 'mail': 1}
 " 开启基于tag的补全，可以在这之后添加需要的标签路径
 let g:ycm_collect_identifiers_from_tags_files= 1
 " 注释和字符串中的文字也会被收入补全
