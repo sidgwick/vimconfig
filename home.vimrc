@@ -289,7 +289,12 @@ nmap slc :lclose<CR>
 let g:PHP_vintage_case_default_indent = 1
 
 " YCM
-let g:ycm_key_invoke_completion = '<C-t>'
+let g:ycm_key_invoke_completion = '<C-x>'
+" make YCM compatible with UltiSnips (using supertab)
+"let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"let g:SuperTabDefaultCompletionType = '<C-n>'
+
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -331,11 +336,6 @@ let g:paredit_mode = 0
 let g:slimv_repl_split = 2
 let g:slimv_repl_split_size = 4
 " autocmd BufEnter REPL :res -10
-
-" make YCM compatible with UltiSnips (using supertab)
-"let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-"let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-"let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " better key bindings for UltiSnipsExpandTrigger
 "let g:UltiSnipsExpandTrigger = "<tab>"
