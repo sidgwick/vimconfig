@@ -95,6 +95,7 @@ Plugin 'mikehaertl/yii2-apidoc-vim'
 
 " Rust
 Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -271,6 +272,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_rust_checkers = ['cargo']
+
 "let g:syntastic_loc_list_height = 5
 "let g:syntastic_enable_highlighting = 1
 
@@ -289,6 +292,8 @@ nmap slc :lclose<CR>
 let g:PHP_vintage_case_default_indent = 1
 
 " YCM
+let g:ycm_rust_src_path = '/usr/src/rust/src'
+
 let g:ycm_key_invoke_completion = '<C-x>'
 " make YCM compatible with UltiSnips (using supertab)
 "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
