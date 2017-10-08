@@ -298,7 +298,8 @@ nmap slc :lclose<CR>
 let g:PHP_vintage_case_default_indent = 1
 
 " YCM
-let g:ycm_rust_src_path = '/usr/src/rust/src'
+"let g:ycm_rust_src_path = '/usr/src/rust/src'
+let g:ycm_rust_src_path = '/usr/lib/rustlib/src/rust/src'
 
 let g:ycm_key_invoke_completion = '<C-x>'
 " make YCM compatible with UltiSnips (using supertab)
