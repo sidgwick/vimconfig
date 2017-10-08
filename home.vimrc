@@ -97,6 +97,12 @@ Plugin 'mikehaertl/yii2-apidoc-vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
 
+" solidity
+Plugin 'tomlion/vim-solidity'
+
+" dot/graphviz
+Plugin 'wannesm/wmgraphviz.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -356,3 +362,5 @@ if executable("ag")
     let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
     let g:ackprg = 'ag --vimgrep'
 endif
+
+let g:WMGraphviz_output = "svg"
