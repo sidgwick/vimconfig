@@ -143,6 +143,7 @@ set smartindent
 set cindent
 " 设定 cinoption的值, 控制缩进风格
 set cino=:0(0
+autocmd FileType javascript,js,jsx set cino=
 
 " 设定缩进宽度
 set tabstop=4
