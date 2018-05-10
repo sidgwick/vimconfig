@@ -34,7 +34,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Indent-Guides'
 " Plugin 'mopp/tailCleaner.vim'
-Plugin 'kuoe0/vim-janitor' "删除行尾空白
+" Plugin 'kuoe0/vim-janitor' "删除行尾空白
+" Plugin 'janitor.vim' "删除行尾空白
+Plugin 'sidgwick/janitor.vim' "删除行尾空白
 " Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 " Plugin 'SuperTab'
@@ -240,8 +242,7 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 let g:jsx_ext_required = 0
 
 let g:janitor_auto_clean_up_on_write = 1
-let g:janitor_exclude_on_trailing_space = ['diff']
-let g:janitor_exclude_on_blank_lines = ['diff', 'python']
+let g:janitor_exclude_on_trailing_spaces = ['diff']
 
 " phpDocumentor variables
 let g:pdv_cfg_Type = "mixed"
