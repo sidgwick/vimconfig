@@ -34,7 +34,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Indent-Guides'
 " Plugin 'mopp/tailCleaner.vim'
-Plugin 'janitor.vim'
+Plugin 'kuoe0/vim-janitor' "删除行尾空白
 " Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 " Plugin 'SuperTab'
@@ -217,7 +217,6 @@ autocmd FileType lisp :RainbowParenthesesLoadRound
 autocmd FileType lisp :RainbowParenthesesLoadSquare
 autocmd FileType lisp :RainbowParenthesesLoadBraces
 
-
 " 设置NerdTree
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
@@ -240,6 +239,9 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 " JSX
 let g:jsx_ext_required = 0
 
+let g:janitor_auto_clean_up_on_write = 1
+let g:janitor_exclude_on_trailing_space = ['diff']
+let g:janitor_exclude_on_blank_lines = ['diff', 'python']
 
 " phpDocumentor variables
 let g:pdv_cfg_Type = "mixed"
