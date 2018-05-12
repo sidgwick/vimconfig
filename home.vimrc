@@ -153,6 +153,8 @@ set softtabstop=4
 set shiftwidth=4
 " 空格代替TAB缩进
 set expandtab
+" mac 上 insert 模式不能使用 delete 键
+set backspace=indent,eol,start
 
 " 每行最多字符
 set textwidth=78
@@ -196,7 +198,7 @@ cs add ./cscope.out
 
 " 特殊文件类型的特殊处理
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType html,htm,tex,js,jsx,javascript,javascript.jsx,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10
+autocmd FileType html,htm,tex,js,jsx,javascript,javascript.jsx,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10 | set cino=:0
 autocmd FileType markdown set shiftwidth=2 | set expandtab | set textwidth=0
 
 " python yapf格式化
