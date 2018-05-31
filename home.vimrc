@@ -93,7 +93,7 @@ Plugin 'JulesWang/css.vim'
 Plugin 'othree/html5.vim'
 
 " Plugins for YII2
-Plugin 'mikehaertl/yii2-apidoc-vim'
+" Plugin 'mikehaertl/yii2-apidoc-vim'
 
 " Rust
 Plugin 'rust-lang/rust.vim'
@@ -316,8 +316,6 @@ let g:ycm_key_invoke_completion = '<C-x>'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-" 回车即选中当前项
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 " Ycm ignore this file types
 let g:ycm_filetype_blacklist={'notes': 1, 'markdown': 1, 'unite': 1, 'tagbar': 1, 'pandoc': 1, 'qf': 1, 'vimwiki': 1, 'text': 1, 'infolog': 1, 'mail': 1}
@@ -341,6 +339,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_confirm_extra_conf = 0
 
 let g:ycm_python_binary_path = 'python'
+let g:ycm_key_list_stop_completion = ['<CR>']
+
 
 " lisp
 let g:slimv_lisp = 'clisp'
