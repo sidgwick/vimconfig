@@ -139,6 +139,9 @@ filetype plugin on
 " 按照文件类型缩进
 filetype indent on
 
+" set mouse=nicr
+set mouse=a
+
 " 自动缩进
 set autoindent
 set smartindent
