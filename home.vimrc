@@ -148,7 +148,6 @@ set smartindent
 set cindent
 " 设定 cinoption的值, 控制缩进风格
 set cino=:0(0
-autocmd FileType javascript,js,jsx set cino=
 
 " 设定缩进宽度
 set tabstop=4
@@ -202,6 +201,8 @@ cs add ./cscope.out
 " 特殊文件类型的特殊处理
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType html,htm,tex,js,jsx,javascript,javascript.jsx,css,less set shiftwidth=2 | set expandtab | set textwidth=125 | set wrapmargin=10 | set cino=:0
+autocmd FileType javascript.jsx,javascript,js,jsx set cino=
+
 autocmd FileType markdown set shiftwidth=2 | set expandtab | set textwidth=0
 
 " python yapf格式化
