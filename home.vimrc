@@ -40,7 +40,8 @@ Plugin 'sidgwick/janitor.vim' "删除行尾空白
 " Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 " Plugin 'SuperTab'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'zxqfl/tabnine-vim'
 Plugin 'mileszs/ack.vim'
 " Plugin 'SirVer/ultisnips'
 Plugin 'taglist.vim'
@@ -76,6 +77,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'burnettk/vim-angular'
+Plugin 'posva/vim-vue'
 " Plugin 'jmcantrell/vim-virtualenv'
 
 " C/CPP
@@ -104,6 +106,9 @@ Plugin 'tomlion/vim-solidity'
 
 " dot/graphviz
 Plugin 'wannesm/wmgraphviz.vim'
+
+" jsonc
+Plugin 'neoclide/jsonc.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -288,6 +293,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_mode_map = {"mode": "active", "passive_filetypes": ["tex"] }
+
 let g:syntastic_rust_checkers = ['cargo']
 
 "let g:syntastic_loc_list_height = 5
@@ -320,6 +327,8 @@ let g:ycm_key_invoke_completion = '<C-x>'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+" 回车即选中当前项
+imap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 " Ycm ignore this file types
 let g:ycm_filetype_blacklist={'notes': 1, 'markdown': 1, 'unite': 1, 'tagbar': 1, 'pandoc': 1, 'qf': 1, 'vimwiki': 1, 'text': 1, 'infolog': 1, 'mail': 1}
