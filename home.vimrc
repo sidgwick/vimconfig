@@ -65,6 +65,9 @@ Plugin 'kovisoft/slimv'
 " Plugin 'vim-scripts/slimv.vim'
 " Plugin 'jpalardy/vim-slime'
 
+" elixir
+Plugin 'elixir-editors/vim-elixir'
+
 " PHP
 Plugin 'captbaritone/better-indent-support-for-php-with-html'
 Plugin 'hameedullah/PDV--phpDocumentor-for-Vim'
@@ -103,6 +106,9 @@ Plugin 'racer-rust/vim-racer'
 
 " solidity
 Plugin 'tomlion/vim-solidity'
+
+" toml
+Plugin 'cespare/vim-toml'
 
 " dot/graphviz
 Plugin 'wannesm/wmgraphviz.vim'
