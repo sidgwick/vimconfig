@@ -182,15 +182,15 @@ set encoding=utf-8
 set history=2000
 set directory=/tmp
 
-" 开启光亮光标行
-set cursorline
-hi CursorLine ctermbg=016 ctermfg=white guibg=darkred guifg=white
-" 开启高亮光标列
-set cursorcolumn
-hi CursorColumn ctermbg=016 ctermfg=white guibg=darkred guifg=white
-
 " 颜色设置
 colorscheme molokai
+
+" 开启高亮光标列
+set cursorcolumn
+"hi CursorColumn ctermbg=016 ctermfg=white guibg=darkred guifg=white
+"" 开启光亮光标行
+set cursorline
+hi CursorLineNr cterm=bold
 
 " 目录自动切换
 set autochdir
