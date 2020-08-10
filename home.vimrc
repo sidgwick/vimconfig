@@ -184,13 +184,15 @@ set directory=/tmp
 
 " 颜色设置
 colorscheme molokai
-
+" 开启光亮光标行
+set cursorline
+hi CursorLine term=bold cterm=bold ctermbg=016
+hi CursorLineNr term=bold cterm=bold
 " 开启高亮光标列
 set cursorcolumn
-"hi CursorColumn ctermbg=016 ctermfg=white guibg=darkred guifg=white
-"" 开启光亮光标行
-set cursorline
-hi CursorLineNr cterm=bold
+hi CursorColumn ctermbg=016
+""hi CursorColumn ctermbg=016 ctermfg=white guibg=darkred guifg=white
+
 
 " 目录自动切换
 set autochdir
