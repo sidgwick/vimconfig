@@ -65,6 +65,9 @@ Plugin 'kovisoft/slimv'
 " Plugin 'vim-scripts/slimv.vim'
 " Plugin 'jpalardy/vim-slime'
 
+" thrift
+Plugin 'solarnz/thrift.vim'
+
 " elixir
 Plugin 'elixir-editors/vim-elixir'
 
